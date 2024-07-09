@@ -16,6 +16,28 @@
       color: white;
       position: fixed;
       width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .sidebar h1, .sidebar h2 {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .sidebar h1 span {
+      color: orange;
+    }
+    .sidebar img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+    .sidebar ul {
+      padding: 0;
+      list-style: none;
+      width: 100%;
     }
     .sidebar a {
       color: white;
@@ -48,48 +70,27 @@
 <body>
   <div class="d-flex">
     <div class="sidebar p-3">
-      <h2>Menu</h2>
+      <img src="icone.png" alt="Logo da Empresa">
+      <h2>Intranet</h2>
+      <h1><span>ELEVO ENERGY</span></h1>
       <ul class="list-unstyled">
-        <li><a href="#chamados">Chamados</a></li>
-        <li><a href="#sistema-elevo">Sistema Elevo</a></li>
+        <li><a href="link_para_chamados">Chamados</a></li>
         <li>
-          <a href="#relatoriosSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Relatórios BI</a>
+          <a href="#relatoriosSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Relatórios</a>
           <ul class="collapse list-unstyled" id="relatoriosSubmenu">
             <li><a href="#compras">Compras</a></li>
             <li><a href="#logistica">Logística</a></li>
             <li><a href="#comercial">Comercial</a></li>
             <li><a href="#tecnica">Técnica</a></li>
           </ul>
+        <li><a href="https://sistema.elevosolar.com/">Elevosolar (Web)</a></li>
         </li>
       </ul>
     </div>
     <div class="content flex-grow-1">
-      <h1>Bem-vindo ao Dashboard Empresarial</h1>
-      <p>Selecione uma opção no menu para ver detalhes.</p>
-      <section id="chamados">
-        <h2>Chamados</h2>
-        <p>Conteúdo da seção de Chamados.</p>
-      </section>
-      <section id="sistema-elevo">
-        <h2>Sistema Elevo</h2>
-        <p>Conteúdo da seção do Sistema Elevo.</p>
-      </section>
-      <section id="compras">
-        <h2>Compras</h2>
-        <p>Conteúdo da seção de Compras.</p>
-      </section>
-      <section id="logistica">
-        <h2>Logística</h2>
-        <p>Conteúdo da seção de Logística.</p>
-      </section>
-      <section id="comercial">
-        <h2>Comercial</h2>
-        <p>Conteúdo da seção Comercial.</p>
-      </section>
-      <section id="tecnica">
-        <h2>Técnica</h2>
-        <p>Conteúdo da seção Técnica.</p>
-      </section>
+      <h1>Bem-vindo ao Sistema de Intranet da Elevo Energy</h1>
+      <p>Selecione uma das opções no menu para ver detalhes ou acesso.</p>
+      
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -97,4 +98,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
 
