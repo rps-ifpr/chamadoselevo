@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Empresarial</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      height: 100vh;
+      background-color: #343a40;
+      color: white;
+      position: fixed;
+      width: 250px;
+    }
+    .sidebar a {
+      color: white;
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background-color: #495057;
+    }
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+    .collapse ul {
+      padding-left: 20px;
+    }
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .content {
+        margin-left: 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    Ola Mundo!!
+  <div class="d-flex">
+    <div class="sidebar p-3">
+      <h2>Menu</h2>
+      <ul class="list-unstyled">
+        <li><a href="#chamados">Chamados</a></li>
+        <li><a href="#sistema-elevo">Sistema Elevo</a></li>
+        <li>
+          <a href="#relatoriosSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Relatórios BI</a>
+          <ul class="collapse list-unstyled" id="relatoriosSubmenu">
+            <li><a href="#compras">Compras</a></li>
+            <li><a href="#logistica">Logística</a></li>
+            <li><a href="#comercial">Comercial</a></li>
+            <li><a href="#tecnica">Técnica</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="content flex-grow-1">
+      <h1>Bem-vindo ao Dashboard Empresarial</h1>
+      <p>Selecione uma opção no menu para ver detalhes.</p>
+      <section id="chamados">
+        <h2>Chamados</h2>
+        <p>Conteúdo da seção de Chamados.</p>
+      </section>
+      <section id="sistema-elevo">
+        <h2>Sistema Elevo</h2>
+        <p>Conteúdo da seção do Sistema Elevo.</p>
+      </section>
+      <section id="compras">
+        <h2>Compras</h2>
+        <p>Conteúdo da seção de Compras.</p>
+      </section>
+      <section id="logistica">
+        <h2>Logística</h2>
+        <p>Conteúdo da seção de Logística.</p>
+      </section>
+      <section id="comercial">
+        <h2>Comercial</h2>
+        <p>Conteúdo da seção Comercial.</p>
+      </section>
+      <section id="tecnica">
+        <h2>Técnica</h2>
+        <p>Conteúdo da seção Técnica.</p>
+      </section>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
